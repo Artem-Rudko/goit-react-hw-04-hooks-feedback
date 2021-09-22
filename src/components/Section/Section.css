@@ -1,0 +1,15 @@
+.Section {
+    width: 400px;
+    border-radius: 4px;
+    border: 1px solid gray;
+    margin-bottom: 24px;
+    padding: 12px 12px 24px;
+    text-align: center;
+    font-family: Urbanist, sans-serif;
+    font-weight: 200;
+    /* font-family: Raleway, sans-serif; */
+}
+
+.Section > h1 {
+    font-weight: 600;
+}

@@ -1,0 +1,34 @@
+.feedbackControls {
+    margin: -6px;
+}
+
+button {
+    padding: 12px 24px;
+    margin: 6px;
+    outline: none;
+    border: none;
+    /* font-size: 18px; */
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: papayawhip;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.good:hover,
+.good:focus {
+    color: #fff;
+    background-color: green;
+}
+
+.neutral:hover,
+.neutral:focus {
+    color: #fff;
+    background-color: gold;
+}
+
+.bad:hover,
+.bad:focus {
+    color: #fff;
+    background-color: darkred;
+}
