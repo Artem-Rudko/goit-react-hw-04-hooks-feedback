@@ -9,9 +9,7 @@ export default function App() {
     const [badFeedback, setBadFeedback] = useState(0);
 
     const handleFeedbackClick = event => {
-        // console.log('one')
         const { type } = event.target.dataset;
-        // console.log(event.target.dataset);
 
         switch (type) {
             case 'good':
@@ -51,38 +49,3 @@ export default function App() {
         </div>
     );
 }
-
-// class OldApp extends Component {
-//     state = {
-//         good: 0,
-//         neutral: 0,
-//         bad: 0,
-//     };
-
-//     handleFeedback = e => {
-//         const { type } = e.target.dataset;
-//         this.setState(prevState => ({ [type]: prevState[type] + 1 }));
-//     };
-
-//     options = Object.keys(this.state);
-
-//     render() {
-//         const { good, neutral, bad } = this.state;
-
-//         return (
-//             <div className="App">
-//                 <Section title="Please leave feedback">
-//                     <FeedbackOptions
-//                         options={this.options}
-//                         onLeaveFeedback={this.handleFeedback}
-//                     />
-//                 </Section>
-//                 <Section title="Statistics">
-//                     <Statistics good={good} neutral={neutral} bad={bad} />
-//                 </Section>
-//             </div>
-//         );
-//     }
-// }
-
-// export default App;
