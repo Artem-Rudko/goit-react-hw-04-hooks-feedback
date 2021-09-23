@@ -12,9 +12,6 @@ class App extends Component {
 
     handleFeedback = e => {
         const { type } = e.target.dataset;
-        console.log(type);
-        console.log(e.target.dataset);
-
         this.setState(prevState => ({ [type]: prevState[type] + 1 }));
     };
 
